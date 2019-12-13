@@ -9,7 +9,7 @@
 }
 
 html, body {
-  background: #2E706C;
+  background: #1B17BD;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -31,9 +31,11 @@ body {
 }
 
 #quiz h1 {
+  position: relative;
+  top: -100px;
   color: #FAFAFA;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 60px;
   text-transform: uppercase;
   text-align: left;
   line-height: 44px;
@@ -41,11 +43,11 @@ body {
 
 #quiz button {
   float: right;
-  margin: 8px 0px 0px 8px;
-  padding: 4px 8px;
+  margin: 40px 0px 0px 8px;
+  padding: 40px 8px;
   background: #9ACFCC;
   color: #00403C;
-  font-size: 14px;
+  font-size: 40px;
   cursor: pointer;
   outline: none;
 }
@@ -70,7 +72,7 @@ body {
 #question h2 {
   margin-bottom: 16px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 #question input[type=radio] {
@@ -80,12 +82,13 @@ body {
 #question label {
   display: inline-block;
   margin: 4px;
-  padding: 8px;
+  padding: 20px;
   background: #FAE3BB;
   color: #4C3000;
-  width: calc(50% - 8px);
+  width: calc(100% - 8px);
   min-width: 100px;
   cursor: pointer;
+  font-size: 40px;
 }
 
 #question label:hover {
@@ -112,18 +115,18 @@ body {
 #quiz-results-message {
   display: block;
   color: #00403C;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 #quiz-results-score {
   display: block;
   color: #31706c;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #quiz-results-score b {
   color: #00403C;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 30px;
 }
