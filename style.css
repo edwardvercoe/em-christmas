@@ -24,6 +24,37 @@ body {
   vertical-align: middle;
 }
 
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #000;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#intro h1 {
+  color: #FAFAFA;
+  font-weight: 600;
+  font-size: 200px;
+}
+
+#intro .btn-enter {
+  height: auto;
+  width: 90vw;
+  color: #FAFAFA;
+  font-size: 60px;
+  padding: 50px;
+  background-color: #1B17BD;
+  margin-top: 100px;
+  border: 10px solid #fff;
+}
+
 #quiz {
   margin: -44px 50px 0px;
   position: relative;
@@ -32,7 +63,7 @@ body {
 
 #quiz h1 {
   position: relative;
-  top: -100px;
+  top: -20px;
   color: #FAFAFA;
   font-weight: 600;
   font-size: 60px;

@@ -1,3 +1,9 @@
+var startQuiz = document.querySelector("#intro");
+
+startQuiz.addEventListener("click", function(e) {
+  startQuiz.remove();
+})
+
 // Array of all the questions and choices to populate the questions. This might be saved in some JSON file or a database and we would have to read the data in.
 var all_questions = [{
   question_string: "What is Ems favourite soft drink?",
@@ -191,14 +197,17 @@ Quiz.prototype.render = function (container) {
     var percentage = score / self.questions.length;
     console.log(percentage);
     var message;
-    if (percentage === 1) {
-      message = 'Great job!'
+    if (percentage == 1) {
+      message = 'You aced the quiz! You know and love Em so much that you MUST be Em!'
+    }
+    else if (percentage >= .9) {
+      message = 'You know Em like you know the back of your hand. Love your work!'
     } else if (percentage >= .75) {
-      message = 'You did alright.'
+      message = 'You know Em pretty darn well. But she still keeps some of her secrets from you ;)'
     } else if (percentage >= .5) {
-      message = 'Better luck next time.'
+      message = 'You did the thing. But seriously, you know Em better than that right...? Right?'
     } else {
-      message = 'Maybe you should try a little harder.'
+      message = 'Well well well... Maybe its time to get to know your friend Em a little better.'
     }
     $('#quiz-results-message').text(message);
     $('#quiz-results-score').html('You got <b>' + score + '/' + self.questions.length + '</b> questions correct.');
